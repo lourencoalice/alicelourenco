@@ -153,7 +153,7 @@ const english = {
   '.education-list article > p': ['FATEC Guaratinguetá','SENAC Guaratinguetá','New certificates and courses will be added here.'],
   '.education-year': ['2026 — 2028','2021 — 2022','Coming soon'],
   '.contact-message h2': ['Send me a message.'], '.contact-line small': ['Email','LinkedIn'],
-  '.footer-inner > p': ['Developed for Alice Lourenço · <span id="year"></span>'],
+  '.footer-inner > p': ['Developed by Alice Lourenço · <span id="year"></span>'],
   '.footer-inner > a:last-child': ['Back to top <span class="up-icon" aria-hidden="true"></span>']
 };
 
