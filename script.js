@@ -138,7 +138,7 @@ const english = {
   '.timeline-card .tags span': ['Human Resources','Systems','Organization','Customer service','Bling','Logistics','Sales','Marketing','Customer service','Reports','Social media','Goals'],
   '.projects .section-label': ['Portfolio'], '.projects .section-top h2': ['Projects'],
   '.project-info small': ['Future project','Future project'],
-  '.project-info h3': ['Lorem ipsum dolor','Sit amet consectetur'],
+  '.project-info h3': ['Lorem ipsum dolo','Sit amet consectetur'],
   '.project-info p': ['Lorem ipsum dolor sit amet, consectetur adipiscing elit. This space will soon feature a project developed by Alice.','Lorem ipsum dolor sit amet, consectetur adipiscing elit. A new management and technology case study will be presented here.'],
   '.project-info .tags span': ['Lorem','Ipsum','Dolor','Lorem','Processes','Data'],
   '.project-coming small': ['Next project'], '.project-coming h3': ['Coming soon.'],
