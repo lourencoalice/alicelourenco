@@ -1,128 +1,432 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfólio de Alice de Oliveira Lourenço — estudante de Gestão da Tecnologia da Informação com experiência em RH, administração, vendas e logística.">
-  <meta name="theme-color" content="#090812">
-  <title>Alice Lourenço | Gestão & Tecnologia</title>
-  <link rel="icon" type="image/png" href="assets/logo.png">
-  <link rel="apple-touch-icon" href="assets/logo.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
-</head>
-<body>
-  <a class="skip-link" href="#main">Pular para o conteúdo</a>
-  <div class="page-grid" aria-hidden="true"></div>
-  <div class="animated-background" aria-hidden="true">
-    <span class="bg-orbit bg-orbit-one"></span>
-    <span class="bg-orbit bg-orbit-two"></span>
-    <span class="bg-blob bg-blob-one"></span>
-    <span class="bg-blob bg-blob-two"></span>
-    <span class="bg-particles"></span>
-  </div>
-  <div class="glow glow-one" aria-hidden="true"></div>
-  <div class="glow glow-two" aria-hidden="true"></div>
-  <div class="cursor-glow" aria-hidden="true"></div>
-  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0F172A" />
+    <meta name="description" content="Portfólio profissional de Maria Laura Fagundes - Analista de Sistemas" />
+    <link rel="icon" type="image/png" href="images/logo.png" />
+    <link rel="apple-touch-icon" href="images/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lexend:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfólio Maria Laura</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner max-width">
+        <a class="brand" href="#home">
+          <span class="brand-mark" aria-hidden="true"><img src="images/logo.png" alt="" /></span>
+          <div>
+            <p class="brand-name">Maria Laura</p>
+            <p class="brand-role" data-i18n="brandRole">Analista</p>
+          </div>
+        </a>
 
-  <header class="site-header">
-    <nav class="nav container" aria-label="Navegação principal">
-      <a class="brand" href="#inicio" aria-label="Alice Lourenço — início"><img class="brand-logo" src="assets/logo.png" alt=""><strong>Alice Lourenço</strong></a>
-      <div class="language-switch" aria-label="Selecionar idioma"><button type="button" data-lang="pt" class="active">PT</button><button type="button" data-lang="en">EN</button></div>
-      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span></button>
-      <div class="nav-links" id="nav-links">
-        <a href="#sobre">Sobre</a><a href="#experiencia">Experiência</a><a href="#habilidades">Habilidades</a><a href="#formacao">Formação</a><a class="nav-contact" href="#contato">Contato</a>
+        <div class="header-actions">
+          <div class="lang-switch" role="group" aria-label="Selecionar idioma" data-i18n-aria-label="languageSelectorLabel">
+            <button class="lang-button active" type="button" data-lang="pt">PT</button>
+            <button class="lang-button" type="button" data-lang="en">EN</button>
+          </div>
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Abrir menu" data-i18n-aria-label="menuOpenLabel" data-i18n-aria-label-open="menuCloseLabel">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
       </div>
-    </nav>
-  </header>
 
-  <main id="main">
-    <section class="hero" id="inicio">
-      <div class="container hero-grid">
-        <div class="hero-copy reveal">
-          <span class="availability"><i></i> Em transição para Tecnologia da Informação</span>
-          <p class="intro">Olá, eu sou</p>
-          <h1>Alice <em>Lourenço.</em></h1>
-          <p class="hero-role">Gestão da Tecnologia da Informação</p>
-          <p class="hero-text">Em transição para a área de tecnologia, unindo experiência com <strong>processos, pessoas e sistemas</strong> aos conhecimentos de <strong>Gestão de TI</strong>. Busco uma oportunidade de estágio ou posição Júnior para transformar aprendizado em prática.</p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="assets/Curriculo_Alice_Lourenco_GTI_2026_Resumo.pdf" download>Baixar currículo <span class="download-icon" aria-hidden="true"></span></a>
-            <a class="button button-secondary" href="mailto:contatolourencoalice@gmail.com">Entrar em contato <span class="arrow-icon" aria-hidden="true"></span></a>
+      <nav class="nav-panel" aria-label="Menu principal" data-i18n-aria-label="mainMenuLabel">
+        <ul class="nav-list">
+          <li><a href="#home" data-i18n="navHome">Home</a></li>
+          <li><a href="#experience" data-i18n="navExperience">Experiência</a></li>
+          <li><a href="#education" data-i18n="navEducation">Formação</a></li>
+          <li><a href="#certificates" data-i18n="navCertificates">Certificados</a></li>
+          <li><a href="#skills" data-i18n="navSkills">Habilidades</a></li>
+          <li><a href="#projects" data-i18n="navProjects">Projetos</a></li>
+          <li><a href="#contact" data-i18n="navContact">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-inner max-width">
+          <div class="hero-copy">
+            <span class="eyebrow" data-i18n="heroIntro">Olá, meu nome é</span>
+            <h1 class="hero-title" data-i18n="heroName">Maria Laura</h1>
+            <p class="hero-text" data-i18n="heroSummary">Profissional de tecnologia com experiência em Transformação Digital, Automação de Processos e desenvolvimento de soluções corporativas. Atuo conectando negócio e tecnologia utilizando metodologias ágeis, análise de dados, implantação de soluções e melhoria contínua.</p>
+            <div class="hero-actions">
+              <a class="button button-secondary" href="https://www.linkedin.com/in/maria-laura-fagundes-857931192" target="_blank" rel="noopener noreferrer" data-i18n="ctaLinkedin">LinkedIn</a>
+              <a class="button button-secondary" href="https://github.com/marialaura13" target="_blank" rel="noopener noreferrer" data-i18n="ctaGithub">GitHub</a>
+            </div>
+          </div>
+          <div class="hero-panel">
+            <img src="images/profile.jpg" alt="Perfil de Maria Laura" class="hero-profile-image" />
           </div>
         </div>
-        <div class="hero-art reveal" aria-label="Foto de Alice Lourenço">
-          <div class="orbit orbit-outer"></div><div class="orbit orbit-inner"></div>
-          <div class="portrait-placeholder"><img src="assets/perfilcorte.png" alt="Retrato de Alice Lourenço"></div>
-          <div class="skill-float float-one"><i></i> Organização</div>
-          <div class="skill-float float-two"><i></i> Processos</div>
-          <div class="skill-float float-three"><i></i> Tecnologia</div>
-          <div class="skill-float float-four"><i></i> Comunicação</div>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="section about" id="sobre">
-      <div class="container about-grid">
-        <div class="about-copy reveal">
-          <h2>Sobre mim</h2>
-          <div class="about-columns">
-            <p>Sou estudante de <strong>Gestão da Tecnologia da Informação na FATEC Guaratinguetá</strong>, em transição de carreira para a área de tecnologia. Minha experiência em RH, Administração, Vendas e Logística me proporcionou uma visão ampla sobre <strong>processos, pessoas e negócios</strong>.</p>
-            <p>Ao longo da minha trajetória, desenvolvi contato com <strong>sistemas e ferramentas digitais</strong>, organização de informações, relatórios e acompanhamento de processos, além de fortalecer habilidades como comunicação, organização e resolução de problemas.</p>
-            <p>Hoje, busco uma oportunidade de <strong>estágio ou posição Júnior em TI</strong> para colocar em prática os conhecimentos da faculdade, enfrentar desafios reais e continuar aprendendo. Quero unir minha experiência profissional à tecnologia e <strong>aprender enquanto faço, contribuindo enquanto evoluo</strong>.</p>
+      <section class="section" id="experience">
+        <div class="section-header max-width">
+          <div>
+            <p class="section-eyebrow" data-i18n="sectionExperienceEyebrow">Experiência</p>
+            <h2 class="section-title" data-i18n="sectionExperience">Trajetória profissional</h2>
           </div>
+          <p class="section-subtitle" data-i18n="sectionExperienceLead">Uma visão objetiva das minhas experiências, entregas e aprendizados profissionais.</p>
         </div>
-        <aside class="personal-card reveal">
-          <img src="assets/perfilfunko.png" alt="Alice Lourenço">
-        </aside>
-      </div>
-    </section>
 
-    <section class="section experience" id="experiencia">
-      <div class="container">
-        <div class="section-top reveal"><div class="section-label">Experiência</div><div><h2>Experiência profissional</h2></div></div>
-        <div class="timeline">
-          <article class="timeline-item reveal"><div class="timeline-date">2026 — Atual</div><div class="timeline-dot"></div><div class="timeline-card"><span class="job-company">Valle Rhiad Móveis</span><h3>Auxiliar de RH</h3><p>Apoio às rotinas administrativas e operacionais de Recursos Humanos, organização de documentos e dados de colaboradores, férias, admissões, desligamentos e processos trabalhistas.</p><div class="tags"><span>Recursos Humanos</span><span>Sistemas</span><span>Organização</span><span>Atendimento</span></div></div></article>
-          <article class="timeline-item reveal"><div class="timeline-date">2025 — 2026</div><div class="timeline-dot"></div><div class="timeline-card"><span class="job-company">Velaroma Store · Bezuti Fragrâncias</span><h3>Administrativo, Vendas & Logística</h3><p>Gestão de pedidos no Bling, suporte comercial, atendimento online, controle de estoque, logística, acompanhamento de processos e apoio à produção e ao marketing.</p><div class="tags"><span>Bling</span><span>Logística</span><span>Vendas</span><span>Marketing</span></div></div></article>
-          <article class="timeline-item reveal"><div class="timeline-date">2021 — 2024</div><div class="timeline-dot"></div><div class="timeline-card"><span class="job-company">Jcaldas Dettalles</span><h3>Vendedora & Marketing</h3><p>Vendas presenciais e online, atendimento, controle de estoque, relatórios gerenciais, apoio em compras, planejamento de marketing, conteúdo e gestão de redes sociais.</p><div class="tags"><span>Atendimento</span><span>Relatórios</span><span>Redes sociais</span><span>Metas</span></div></div></article>
+        <div class="cards-grid max-width">
+          <article class="exp-card" data-expandable="true" tabindex="0" role="button" aria-expanded="false">
+            <div class="exp-card-header">
+              <div>
+                <p class="exp-card-period" data-i18n="exp1Period">2022 – Atual</p>
+                <h3 class="exp-card-title" data-i18n="exp1Role">Analista de Sistemas</h3>
+              </div>
+              <span class="exp-card-employer" data-i18n="exp1Company">BASF | Fatecoins</span>
+            </div>
+            <ul class="exp-list">
+              <li data-i18n="exp1Desc1">Desenvolvimento de soluções para Transformação Digital e Automação de Processos Industriais.</li>
+              <li data-i18n="exp1Desc2">Levantamento de requisitos, mapeamento de processos e visitas a plantas produtivas para entendimento da operação.</li>
+              <li data-i18n="exp1Desc3">Planejamento de projetos, criação e refinamento de Product Backlog e gestão de demandas.</li>
+              <li data-i18n="exp1Desc4">Atuação com Metodologia Ágil (Scrum), conduzindo Sprint Planning, Sprint Review e acompanhamento das entregas.</li>
+              <li data-i18n="exp1Desc5">Experiência atuando com Tech Lead, Scrum Master e Product Owner (PO).</li>
+              <li data-i18n="exp1Desc6">Desenvolvimento de aplicações utilizando Angular, JavaScript, Java e SQL.</li>
+              <li data-i18n="exp1Desc7">Desenvolvimento de soluções com Microsoft Power Platform (Power Apps e Power Automate).</li>
+              <li data-i18n="exp1Desc8">Criação de dashboards e análise de dados com Power BI e Report Builder (SSRS).</li>
+              <li data-i18n="exp1Desc9">Desenvolvimento de soluções em AVEVA Work Tasks e Augmentir.</li>
+              <li data-i18n="exp1Desc10">Integração de aplicações corporativas com SAP.</li>
+              <li data-i18n="exp1Desc11">Desenvolvimento de etiquetas e formulários utilizando ZebraDesigner.</li>
+              <li data-i18n="exp1Desc12">Análise de dados, testes, homologação, implantação e melhoria contínua de sistemas.</li>
+              <li data-i18n="exp1Desc13">Elaboração de documentação técnica e documentação funcional para usuários.</li>
+              <li data-i18n="exp1Desc14">Condução de treinamentos e capacitação de usuários finais.</li>
+              <li data-i18n="exp1Desc15">Suporte técnico N2 e N3 para aplicações corporativas.</li>
+              <li data-i18n="exp1Desc16">Apresentação de resultados e soluções para stakeholders e gerência.</li>
+              <li data-i18n="exp1Desc17">Atuação em projetos internacionais, colaborando com equipes multiculturais.</li>
+              <li data-i18n="exp1Desc18">Experiência em ambiente de Manufatura Inteligente (Smart Manufacturing) na indústria química global BASF.</li>
+            </ul>
+            <button class="exp-toggle" type="button" aria-expanded="false" data-i18n-more="toggleMore" data-i18n-less="toggleLess">Ver mais</button>
+          </article>
+
+          <article class="exp-card" data-expandable="true" tabindex="0" role="button" aria-expanded="false">
+            <div class="exp-card-header">
+              <div>
+                <p class="exp-card-period" data-i18n="exp2Period">2021 – 2022</p>
+                <h3 class="exp-card-title" data-i18n="exp2Role">Estagiária de projetos</h3>
+              </div>
+              <span class="exp-card-employer" data-i18n="exp2Company">BASF</span>
+            </div>
+            <ul class="exp-list">
+              <li data-i18n="exp2Desc1">Apoio em projetos de Transformação Digital e Automação de Processos Industriais.</li>
+              <li data-i18n="exp2Desc2">Desenvolvimento de soluções voltadas à Indústria 4.0 e digitalização de operações.</li>
+              <li data-i18n="exp2Desc3">Levantamento de requisitos e entendimento de processos junto aos usuários.</li>
+              <li data-i18n="exp2Desc4">Desenvolvimento e manutenção de aplicações utilizando Skelta BPM, JavaScript e SQL Server.</li>
+              <li data-i18n="exp2Desc5">Integração de sistemas e automação de processos.</li>
+              <li data-i18n="exp2Desc6">Participação em projetos utilizando Metodologias Ágeis (Scrum e Kanban).</li>
+              <li data-i18n="exp2Desc7">Utilização de Azure DevOps para gerenciamento de atividades e acompanhamento das sprints.</li>
+              <li data-i18n="exp2Desc8">Criação e manutenção de consultas em SQL Server.</li>
+              <li data-i18n="exp2Desc9">Apoio na realização de testes, homologações e implantações de aplicações.</li>
+              <li data-i18n="exp2Desc10">Elaboração de documentação técnica e documentação para usuários.</li>
+              <li data-i18n="exp2Desc11">Suporte aos usuários e resolução de incidentes.</li>
+              <li data-i18n="exp2Desc12">Participação em reuniões com equipes multidisciplinares e acompanhamento das entregas dos projetos.</li>
+              <li data-i18n="exp2Desc13">Vivência em ambiente industrial, colaborando em iniciativas de Smart Manufacturing na BASF.</li>
+            </ul>
+            <button class="exp-toggle" type="button" aria-expanded="false" data-i18n-more="toggleMore" data-i18n-less="toggleLess">Ver mais</button>
+          </article>
+
+          <article class="exp-card" data-expandable="true" tabindex="0" role="button" aria-expanded="false">
+            <div class="exp-card-header">
+              <div>
+                <p class="exp-card-period" data-i18n="exp3Period">2020 – 2021</p>
+                <h3 class="exp-card-title" data-i18n="exp3Role">Monitoria em informática</h3>
+              </div>
+              <span class="exp-card-employer" data-i18n="exp3Company">S.O.S. – Serviços de Obras Sociais</span>
+            </div>
+            <ul class="exp-list">
+              <li data-i18n="exp3Desc1">Instrutora de informática para turmas de crianças e adolescentes em situação de vulnerabilidade social, ministrando aulas nos períodos da manhã e da tarde.</li>
+              <li data-i18n="exp3Desc2">Ensino de informática básica, incluindo navegação na internet, uso do pacote Microsoft Office, gerenciamento de arquivos e boas práticas no uso do computador.</li>
+              <li data-i18n="exp3Desc3">Planejamento e preparação de atividades didáticas adaptadas às diferentes faixas etárias.</li>
+              <li data-i18n="exp3Desc4">Suporte técnico de Nível 1 (N1) para colaboradores, realizando diagnóstico e resolução de problemas básicos de hardware, software e rede.</li>
+              <li data-i18n="exp3Desc5">Instalação e configuração básica de computadores, periféricos e aplicativos.</li>
+              <li data-i18n="exp3Desc6">Apoio na manutenção do laboratório de informática, garantindo o funcionamento dos equipamentos para as atividades educacionais.</li>
+              <li data-i18n="exp3Desc7">Atendimento aos usuários, prestando suporte e orientação sobre o uso de recursos tecnológicos.</li>
+              <li data-i18n="exp3Desc8">Desenvolvimento de habilidades de comunicação, didática, resolução de problemas e atendimento ao usuário.</li>
+            </ul>
+            <button class="exp-toggle" type="button" aria-expanded="false" data-i18n-more="toggleMore" data-i18n-less="toggleLess">Ver mais</button>
+          </article>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="section skills" id="habilidades">
-      <div class="container">
-        <div class="section-top reveal"><div class="section-label">Competências</div><div><h2>Habilidades e conhecimentos</h2></div></div>
-        <div class="skills-layout">
-          <div class="skill-group reveal"><span class="skill-number">01</span><h3>Ferramentas</h3><div class="skill-list"><span>Pacote Office</span><span>Bling</span><span>Praticx</span><span>Informática</span><span>Sistemas digitais</span></div></div>
-          <div class="skill-group reveal"><span class="skill-number">02</span><h3>Gestão</h3><div class="skill-list"><span>Gestão de processos</span><span>Relatórios</span><span>Controle de estoque</span><span>Rotinas administrativas</span><span>RH</span></div></div>
-          <div class="skill-group reveal"><span class="skill-number">03</span><h3>Competências pessoais</h3><div class="skill-list"><span>Comunicação</span><span>Organização</span><span>Trabalho em equipe</span><span>Resolução de problemas</span><span>Pensamento estratégico</span></div></div>
+      <section class="section section--soft" id="education">
+        <div class="section-header max-width">
+          <div>
+            <p class="section-eyebrow" data-i18n="sectionEducationEyebrow">Formação</p>
+            <h2 class="section-title" data-i18n="sectionEducation">Base acadêmica</h2>
+          </div>
+          <p class="section-subtitle" data-i18n="sectionEducationLead">Estrutura de formação que sustenta a prática em TI e gestão.</p>
         </div>
-      </div>
-    </section>
 
-    <section class="section education" id="formacao">
-      <div class="container education-grid">
-        <div class="education-heading reveal"><div class="section-label">Formação</div><h2>Formação</h2><p>A formação conecta a base administrativa de Alice ao universo da Tecnologia da Informação.</p></div>
-        <div class="education-list reveal">
-          <article><span class="education-year">2026 — 2028</span><small>Graduação em andamento</small><h3>Gestão da Tecnologia da Informação</h3><p>FATEC Guaratinguetá</p></article>
-          <article><span class="education-year">2021 — 2022</span><small>Formação técnica</small><h3>Técnico em Administração</h3><p>SENAC Guaratinguetá</p></article>
-          <article><span class="education-year">Atual</span><small>Curso</small><h3>Trilha Front End</h3><p>Origamid</p></article>
-          <article><span class="education-year">2024</span><small>Curso</small><h3>Língua Inglesa e Espanhola</h3><p>KNN Idiomas</p></article>
+        <div class="cards-grid max-width">
+          <article class="info-card">
+            <span class="info-badge" data-i18n="edu2Badge">Graduação</span>
+            <h3 class="info-title" data-i18n="edu2Title">Fatec – Gestão da Tecnologia da Informação</h3>
+            <p class="info-meta" data-i18n="edu2Year">Início em 2019</p>
+            <p class="info-text" data-i18n="edu2Text">Na graduação, desenvolvi conhecimentos em programação, banco de dados, metodologias ágeis e criação de soluções digitais. Também fortaleci habilidades de comunicação por meio de apresentações frequentes e trabalhos em equipe. No TCC, participei do desenvolvimento do aplicativo E ai Cidadão, criado do zero para resolver um problema real, aplicando análise de requisitos, planejamento e desenvolvimento de software.</p>
+          </article>
+          <article class="info-card">
+            <span class="info-badge" data-i18n="edu1Badge">Ensino técnico</span>
+            <h3 class="info-title" data-i18n="edu1Title">ETEC – Administração</h3>
+            <p class="info-meta" data-i18n="edu1Year">Conclusão em 2018</p>
+            <p class="info-text" data-i18n="edu1Text">Formação técnica em Administração com foco em comunicação, organização e trabalho em equipe.</p>
+          </article>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="contact section" id="contato">
-      <div class="container contact-shell reveal">
-        <div class="contact-message"><h2>Me mande uma mensagem.</h2></div>
-        <div class="contact-actions"><a class="contact-line" href="mailto:contatolourencoalice@gmail.com"><small>E-mail</small><strong>contatolourencoalice@gmail.com</strong></a><a class="contact-line" href="https://www.linkedin.com/in/alice-lourencoo/" target="_blank" rel="noopener noreferrer"><small>LinkedIn</small><strong>Alice Lourenço</strong></a></div>
-      </div>
-    </section>
-  </main>
+      <section class="section" id="certificates">
+        <div class="section-header max-width">
+          <div>
+            <p class="section-eyebrow" data-i18n="sectionCertificatesEyebrow">Certificados</p>
+            <h2 class="section-title" data-i18n="sectionCertificates">Qualificações</h2>
+          </div>
+          <p class="section-subtitle" data-i18n="sectionCertificatesLead">Cursos e certificações relevantes para tecnologia e infraestrutura.</p>
+        </div>
 
-  <footer><div class="container footer-inner"><a class="brand" href="#inicio"><img class="brand-logo" src="assets/logo.png" alt=""><strong>Alice Lourenço</strong></a><p>Desenvolvido por Alice Lourenço · <span id="year"></span></p><a href="#inicio">Voltar ao topo <span class="up-icon" aria-hidden="true"></span></a></div></footer>
-</body>
+        <div class="cards-grid max-width">
+          <article class="cert-card">
+            <div class="cert-card-header">
+              <span class="cert-icon"><img src="images/cisco.png" alt="" /></span>
+              <span class="cert-label" data-i18n="cert1Tag2">CISCO</span>
+            </div>
+            <h3 class="cert-title" data-i18n="cert1Title">IT Essentials</h3>
+            <p class="cert-text" data-i18n="cert1Text">Curso de Hardware e Software pela CISCO, concluído durante a faculdade.</p>
+            <a class="cert-link" href="https://drive.google.com/file/d/12OrFtL4C-FgO6SKUochvtwm1aM1LXwaU/view?usp=sharing" target="_blank" rel="noopener noreferrer" data-i18n="certView">Ver certificado</a>
+          </article>
+          <article class="cert-card">
+            <div class="cert-card-header">
+              <span class="cert-icon"><img src="images/js.webp" alt="" /></span>
+              <span class="cert-label" data-i18n="cert2Tag2">freeCodeCamp</span>
+            </div>
+            <h3 class="cert-title" data-i18n="cert2Title">JavaScript</h3>
+            <p class="cert-text" data-i18n="cert2Text">Curso prático de JavaScript com exercícios do freeCodeCamp.</p>
+            <a class="cert-link" href="https://drive.google.com/file/d/12yJv3Uu2eTbamRndH_iG9GCMx8s6oY7E/view" target="_blank" rel="noopener noreferrer" data-i18n="certView">Ver certificado</a>
+          </article>
+          <article class="cert-card">
+            <div class="cert-card-header">
+              <span class="cert-icon"><img src="images/scrum.png" alt="" /></span>
+              <span class="cert-label" data-i18n="cert3Tag2">Scrum</span>
+            </div>
+            <h3 class="cert-title" data-i18n="cert3Title">Scrum Foundation Professional Certificate - SFPC</h3>
+            <p class="cert-text" data-i18n="cert3Text">Fundamentos do Scrum, metodologias ágeis, colaboração em equipe, planejamento de entregas e melhoria contínua em projetos.</p>
+            <a class="cert-link" href="https://drive.google.com/file/d/1COUEfmlhsFFWdfSCJDkyW7oPB43uXa-X/view?usp=sharing" target="_blank" rel="noopener noreferrer" data-i18n="certView">Ver certificado</a>
+          </article>
+          <article class="cert-card">
+            <div class="cert-card-header">
+              <span class="cert-icon"><img src="images/origamid.png" alt="" /></span>
+              <span class="cert-label" data-i18n="cert4Tag2">Origamid</span>
+            </div>
+            <h3 class="cert-title" data-i18n="cert4Title">UI Design - Origamid</h3>
+            <p class="cert-text" data-i18n="cert4Text">Fundamentos de UI Design, abordando princípios de design visual, tipografia, teoria das cores, grids, espaçamento, hierarquia visual e criação de interfaces responsivas com foco na experiência do usuário.</p>
+            <a class="cert-link" href="https://drive.google.com/file/d/1ugGhAg2MG5o_84lgSjklgZVE1aDRuJoK/view?usp=sharing" target="_blank" rel="noopener noreferrer" data-i18n="certView">Ver certificado</a>
+          </article>
+          <article class="cert-card">
+            <div class="cert-card-header">
+              <span class="cert-icon"><img src="images/coursera.png" alt="" /></span>
+              <span class="cert-label" data-i18n="cert5Tag2">Coursera</span>
+            </div>
+            <h3 class="cert-title" data-i18n="cert5Title">Fundamentos do gerenciamento de projetos - Coursera</h3>
+            <p class="cert-text" data-i18n="cert5Text">Fundamentos do gerenciamento de projetos, incluindo planejamento, definição de objetivos, organização de atividades, acompanhamento de entregas e colaboração com equipes.</p>
+            <a class="cert-link" href="https://drive.google.com/file/d/1hSjHa4Nsm7MZwoKmW8pGsj7x7kEH3WPL/view?usp=sharing" target="_blank" rel="noopener noreferrer" data-i18n="certView">Ver certificado</a>
+          </article>
+          <article class="cert-card">
+            <div class="cert-card-header">
+              <span class="cert-icon"><img src="images/coursera.png" alt="" /></span>
+              <span class="cert-label" data-i18n="cert6Tag2">Coursera</span>
+            </div>
+            <h3 class="cert-title" data-i18n="cert6Title">Início do projeto: Como começar um projeto bem-sucedido</h3>
+            <p class="cert-text" data-i18n="cert6Text">Curso sobre fundamentos de iniciação de projetos, abordando estrutura, componentes principais, definição de objetivos e análise de custos e benefícios.</p>
+            <a class="cert-link" href="https://www.coursera.org/learn/inicio-do-projeto-como-comecar-um-projeto-bem-sucedido/home/welcome" target="_blank" rel="noopener noreferrer" data-i18n="certView">Ver certificado</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--soft" id="skills">
+        <div class="section-header max-width">
+          <div>
+            <p class="section-eyebrow" data-i18n="sectionSkillsEyebrow">Habilidades</p>
+            <h2 class="section-title" data-i18n="sectionSkills">Stack técnico</h2>
+          </div>
+          <p class="section-subtitle" data-i18n="sectionSkillsLead">Competências organizadas em categorias claras e legíveis.</p>
+        </div>
+
+        <div class="skill-grid max-width">
+          <article class="skill-card skill-card-wide">
+            <h3 class="skill-card-title" data-i18n="skillsProcess">Gestão de Projetos & Análise</h3>
+            <p class="skill-card-sub" data-i18n="skillsProcessSub">Análise e governança de demandas.</p>
+            <div class="skill-pill-row">
+              <span class="skill-pill" data-i18n="skillRequirements">Levantamento de requisitos</span>
+              <span class="skill-pill" data-i18n="skillSystemsAnalysis">Análise de sistemas</span>
+              <span class="skill-pill" data-i18n="skillProcessMapping">Mapeamento de processos</span>
+              <span class="skill-pill" data-i18n="skillProcessAnalysis">Análise de processos</span>
+              <span class="skill-pill" data-i18n="skillBacklogManagement">Gestão de backlog</span>
+              <span class="skill-pill">Sprint Planning</span>
+              <span class="skill-pill">Sprint Review</span>
+              <span class="skill-pill" data-i18n="skillDemandManagement">Gestão de demandas</span>
+              <span class="skill-pill" data-i18n="skillFunctionalDocs">Documentação funcional</span>
+              <span class="skill-pill" data-i18n="skillTechnicalDocs">Documentação técnica</span>
+              <span class="skill-pill" data-i18n="skillUat">Homologação (UAT)</span>
+              <span class="skill-pill" data-i18n="skillDeployment">Implantação</span>
+              <span class="skill-pill" data-i18n="skillContinuousImprovement">Melhoria contínua</span>
+              <span class="skill-pill">Scrum</span>
+              <span class="skill-pill">Kanban</span>
+              <span class="skill-pill" data-i18n="skillAgileMethods">Metodologias Ágeis</span>
+              <span class="skill-pill" data-i18n="skillUserTraining">Treinamento de usuários</span>
+            </div>
+          </article>
+          <article class="skill-card">
+            <h3 class="skill-card-title" data-i18n="skillsFront">Front-end</h3>
+            <p class="skill-card-sub" data-i18n="skillsFrontSub">Interfaces e apresentação.</p>
+            <div class="skill-pill-row">
+              <span class="skill-pill">HTML5</span>
+              <span class="skill-pill">CSS3</span>
+              <span class="skill-pill">JavaScript</span>
+              <span class="skill-pill">Angular</span>
+              <span class="skill-pill">Bootstrap</span>
+              <span class="skill-pill">Power Apps</span>
+              <span class="skill-pill">TypeScript</span>
+              <span class="skill-pill">Responsive Design</span>
+            </div>
+          </article>
+          <article class="skill-card">
+            <h3 class="skill-card-title" data-i18n="skillsData">Banco de Dados & BI</h3>
+            <p class="skill-card-sub" data-i18n="skillsDataSub">Modelagem, consultas e relatórios.</p>
+            <div class="skill-pill-row">
+              <span class="skill-pill">SQL Server</span>
+              <span class="skill-pill">MySQL</span>
+              <span class="skill-pill">Power BI</span>
+              <span class="skill-pill">SSRS</span>
+              <span class="skill-pill">SQL</span>
+              <span class="skill-pill" data-i18n="skillDataAnalysis">Análise de dados</span>
+              <span class="skill-pill">Report Builder</span>
+            </div>
+          </article>
+          <article class="skill-card">
+            <h3 class="skill-card-title" data-i18n="skillsTools">Ferramentas</h3>
+            <p class="skill-card-sub" data-i18n="skillsToolsSub">Colaboração e ciclo de vida.</p>
+            <div class="skill-pill-row">
+              <span class="skill-pill">Azure DevOps</span>
+              <span class="skill-pill">Jira</span>
+              <span class="skill-pill">Trello</span>
+              <span class="skill-pill">AVEVA Work Tasks</span>
+              <span class="skill-pill">Augmentir</span>
+              <span class="skill-pill">ZebraDesigner</span>
+              <span class="skill-pill">Power Platform</span>
+            </div>
+          </article>
+          <article class="skill-card">
+            <h3 class="skill-card-title" data-i18n="skillsDevelopment">Desenvolvimento</h3>
+            <p class="skill-card-sub" data-i18n="skillsDevelopmentSub">Aplicações, serviços e integrações.</p>
+            <div class="skill-pill-row">
+              <span class="skill-pill">Java</span>
+              <span class="skill-pill">JavaScript</span>
+              <span class="skill-pill">Angular</span>
+              <span class="skill-pill">SQL</span>
+              <span class="skill-pill">APIs REST</span>
+            </div>
+          </article>
+          <article class="skill-card skill-card-wide">
+            <h3 class="skill-card-title" data-i18n="skillsSoft">Soft Skills</h3>
+            <p class="skill-card-sub" data-i18n="skillsSoftSub">Competências comportamentais e profissionais.</p>
+            <div class="skill-pill-row">
+              <span class="skill-pill" data-i18n="skillCommunication">Comunicação</span>
+              <span class="skill-pill" data-i18n="skillLeadership">Liderança</span>
+              <span class="skill-pill" data-i18n="skillTeamwork">Trabalho em equipe</span>
+              <span class="skill-pill" data-i18n="skillAnalyticalThinking">Pensamento analítico</span>
+              <span class="skill-pill" data-i18n="skillProblemSolving">Resolução de problemas</span>
+              <span class="skill-pill" data-i18n="skillOrganization">Organização</span>
+              <span class="skill-pill" data-i18n="skillNegotiation">Negociação</span>
+              <span class="skill-pill" data-i18n="skillAdaptability">Adaptabilidade</span>
+              <span class="skill-pill" data-i18n="skillDecisionMaking">Tomada de decisão</span>
+              <span class="skill-pill" data-i18n="skillPriorityManagement">Gestão de prioridades</span>
+              <span class="skill-pill" data-i18n="skillBusinessVision">Visão de negócio</span>
+              <span class="skill-pill" data-i18n="skillContinuousLearning">Aprendizado contínuo</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="section-header max-width">
+          <div>
+            <p class="section-eyebrow" data-i18n="sectionProjectsEyebrow">Projetos</p>
+            <h2 class="section-title" data-i18n="sectionProjects">Trabalhos práticos</h2>
+          </div>
+          <p class="section-subtitle" data-i18n="sectionProjectsLead">Aplicações e sites desenvolvidos para necessidades reais.</p>
+        </div>
+
+        <div class="cards-grid max-width">
+          <article class="project-card">
+            <h3 class="project-title" data-i18n="proj1Title">Site comercial Studio de Estética</h3>
+            <a class="cert-link" href="https://studio-revitalle.pages.dev/" target="_blank" rel="noopener noreferrer" data-i18n="projectView">Ver aplicação</a>
+          </article>
+          <article class="project-card">
+            <h3 class="project-title" data-i18n="proj2Title">Projeto E Aí, Cidadão</h3>
+            <a class="cert-link" href="https://eaicidadao.pages.dev/" target="_blank" rel="noopener noreferrer" data-i18n="projectView">Ver aplicação</a>
+          </article>
+          <article class="project-card">
+            <h3 class="project-title" data-i18n="proj3Title">Site comercial Dentista</h3>
+            <a class="cert-link" href="https://clinica-alineperrenoud.pages.dev/" target="_blank" rel="noopener noreferrer" data-i18n="projectView">Ver aplicação</a>
+          </article>
+          <article class="project-card">
+            <h3 class="project-title" data-i18n="proj4Title">Rastreamento de amostras</h3>
+            <p class="project-text" data-i18n="proj4Desc">Aplicação para rastreamento de amostras de materiais em ambiente industrial, com gerenciamento do ciclo de vida das amostras, geração e impressão de etiquetas de identificação, proporcionando maior controle, rastreabilidade e agilidade nos processos.</p>
+          </article>
+          <article class="project-card">
+            <h3 class="project-title" data-i18n="proj5Title">Controle de Envasamento</h3>
+            <p class="project-text" data-i18n="proj5Desc">Sistema para apoio ao processo de envasamento de produtos, reunindo informações essenciais do produto e validações de segurança em uma única interface. A solução reduziu o tempo de execução das conferências, minimizou erros de preenchimento e contribuiu para maior padronização e segurança operacional.</p>
+          </article>
+          <article class="project-card">
+            <h3 class="project-title" data-i18n="proj6Title">Checklists Operacionais Digitais</h3>
+            <p class="project-text" data-i18n="proj6Desc">Conjunto de mais de 100 checklists digitais voltados à padronização de processos industriais. O projeto envolveu a criação e evolução contínua de formulários utilizados por equipes multiculturais, com foco em usabilidade, validações, padronização de processos e ganho de eficiência operacional.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--soft" id="contact">
+        <div class="section-header max-width">
+          <div>
+            <p class="section-eyebrow" data-i18n="sectionContactEyebrow">Contato</p>
+            <h2 class="section-title" data-i18n="sectionContact">Vamos conversar?</h2>
+          </div>
+          <p class="section-subtitle" data-i18n="sectionContactLead">Contate via LinkedIn, GitHub ou e-mail.</p>
+        </div>
+
+        <div class="contact-grid max-width">
+          <article class="contact-card">
+            <p class="contact-label">GitHub</p>
+            <h3 class="contact-title">/marialaura13</h3>
+            <a class="button button-primary" href="https://github.com/marialaura13" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </article>
+          <article class="contact-card">
+            <p class="contact-label">LinkedIn</p>
+            <h3 class="contact-title">/maria-laura-fagundes-857931192</h3>
+            <a class="button button-primary" href="https://www.linkedin.com/in/maria-laura-fagundes-857931192" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          </article>
+          <article class="contact-card">
+            <p class="contact-label" data-i18n="contactEmailLabel">E-mail</p>
+            <h3 class="contact-title">marialauraindi@outlook.com</h3>
+            <a class="button button-primary" href="mailto:marialauraindi@outlook.com" data-i18n="contactEmailButton">Enviar e-mail</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="max-width footer-inner">
+        <p data-i18n="footer">Criado por Maria Laura Fagundes</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
